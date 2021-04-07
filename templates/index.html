@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='general.css') }}">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row d-flex align-items-center justify-content-center" style="height:75vh">
+            <div class="col-6 mx-auto mt-5">
+                <h3 class="text-center">Ingredients</h3>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="E.g Apples" id="valueInput" >
+                    <div id="searchResults">
+                    
+                    </div>
+                    <button class="btn btn-primary mt-3" onclick="onSearchComplete();">Add</button>
+                    <button class="btn btn-success mt-3" onclick="getRecipes();" id="scrollClick">Get Recipes</button>
+                    <div class="col-10 mt-3" id="appendDiv">
+
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="row mt-5" id="bl">
+            <div class="col-6 mx-auto text-center" id="recipeList">
+                <br>
+                <h2 class="text-center">Recipes</h2>
+                <hr>
+                <p class="text-center" id="hintMsg"><i>Add some ingredients and click "Get Recipes"!</i></p>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='javascript/logic.js') }}"></script>
+</body>
+</html>

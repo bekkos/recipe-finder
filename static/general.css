@@ -1,0 +1,78 @@
+body {
+    scroll-behavior: smooth !important;
+}
+
+#appendDiv {
+    margin: auto;
+}
+
+.item {
+    width: 130px;
+    height: 40px;
+    background: #ffbe6e;
+    color: black;
+    display: inline-block;
+    border-radius: 30px;
+    margin: 5px 0px;
+    transition-duration: 1s;
+}
+
+.item p {
+    text-align: center;
+    line-height: 40px;
+}
+
+.item:hover {
+    background: #ff3a34;
+    opacity: 0.6;
+    transition-duration: 1s;
+}
+
+
+
+#searchResults {
+    width: 96%;
+    position: absolute;
+    background-color: white;
+    border-bottom: solid 1px grey;
+    border-left: solid 1px grey;
+    display: none;
+    z-index: 3;
+}
+
+
+
+#searchResults p {
+    width: 100%;
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0;
+}
+
+#searchResults p:hover {
+    background-color: rgb(226, 226, 226);
+}
+
+.recipeItem {
+    margin-top: 30px;
+}
+
+.recipeItem p {
+    margin: 0;
+    padding: 0;
+}
+
+#bl {
+    background-color: #333333;
+    color: white;
+    min-height: 20vh;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+hr {
+    background-color: white;
+}

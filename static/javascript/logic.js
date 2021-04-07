@@ -11,7 +11,7 @@ function urlRedirect(a) {
     let url = "https://www.google.com/search?q=";
     let query = a.split(' ').join('+');
     url += query;
-    window.location.replace(url);
+    window.open(url, '_blank');
 }
 
 
